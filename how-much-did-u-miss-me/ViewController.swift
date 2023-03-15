@@ -6,7 +6,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var randomNumber = 3
 
     @IBOutlet var imageView: UIImageView!
-    @IBOutlet var progressBar: UIProgressView!
     @IBOutlet var progressLabel: UILabel!
     @IBOutlet var dateTextField: UITextField!
     
@@ -35,26 +34,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
             return
         }
         
-        // Calculate the time interval between the current date and the target date
+      
         let currentDate = Date()
-//        let timeInterval = targetDate.timeIntervalSince(currentDate)
+
         let timeInterval = currentDate.timeIntervalSince(targetDate)
         let hours = Int(timeInterval / 3600)
         
-        // Calculate the progress value
-        var progressValue: Float = 0.0
-        
-        // Set the progress value to 0 if the time interval is negative
-        if hours > 100 {
-            progressValue = 100.0
-        } else {
-            progressValue = (Float(hours))
-        }
-        
-        // Update the progress bar and label
-        progressBar.progress = progressValue
-        progressLabel.text = "\(Int(hours))%"
-      
+ 
+
+     
+        progressLabel.text = "I miss you this big: \(Int(hours))%"
         getRandomNumber()
         print(randomNumber)
         imageView.image = UIImage(named: emojiImages[randomNumber])
@@ -64,8 +53,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = UIImage(named: emojiImages[randomNumber])
-        progressBar.progress = 0.0
-        progressLabel.text = "0%"
+        progressLabel.text = "Enter the last date that we were together below:"
         dateTextField.delegate = self
     }
     
