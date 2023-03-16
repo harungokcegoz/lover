@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A3F873D29C1D0B0005BD430 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3F873C29C1D0B0005BD430 /* Launch Screen.storyboard */; };
+		4A3F873F29C26706005BD430 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3F873E29C26706005BD430 /* Question.swift */; };
+		4A3F874429C2681B005BD430 /* QuizHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3F874329C2681B005BD430 /* QuizHandler.swift */; };
+		4A3F874629C268FA005BD430 /* MissEmojiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3F874529C268FA005BD430 /* MissEmojiHandler.swift */; };
+		4A3F874829C26BB8005BD430 /* MissTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3F874729C26BB8005BD430 /* MissTime.swift */; };
+		4A3F874A29C280DC005BD430 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3F874929C280DC005BD430 /* QuizViewController.swift */; };
+		4A3F874E29C2851B005BD430 /* QuizStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3F874D29C2851B005BD430 /* QuizStoryboard.storyboard */; };
+		4A3F875229C2857E005BD430 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3F875129C2857E005BD430 /* MenuTableViewController.swift */; };
+		4A3F875329C29089005BD430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3F875529C29089005BD430 /* Main.storyboard */; };
+		4A3F875829C29110005BD430 /* MissStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3F875729C29110005BD430 /* MissStoryboard.storyboard */; };
 		4AC2D06A29B7B2F500E6DD35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC2D06929B7B2F500E6DD35 /* AppDelegate.swift */; };
 		4AC2D06C29B7B2F500E6DD35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC2D06B29B7B2F500E6DD35 /* SceneDelegate.swift */; };
-		4AC2D06E29B7B2F500E6DD35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC2D06D29B7B2F500E6DD35 /* ViewController.swift */; };
-		4AC2D07129B7B2F500E6DD35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC2D06F29B7B2F500E6DD35 /* Main.storyboard */; };
+		4AC2D06E29B7B2F500E6DD35 /* MissViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC2D06D29B7B2F500E6DD35 /* MissViewController.swift */; };
 		4AC2D07329B7B2F500E6DD35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC2D07229B7B2F500E6DD35 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4A3F873C29C1D0B0005BD430 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		4A3F873E29C26706005BD430 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		4A3F874329C2681B005BD430 /* QuizHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizHandler.swift; sourceTree = "<group>"; };
+		4A3F874529C268FA005BD430 /* MissEmojiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissEmojiHandler.swift; sourceTree = "<group>"; };
+		4A3F874729C26BB8005BD430 /* MissTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissTime.swift; sourceTree = "<group>"; };
+		4A3F874929C280DC005BD430 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		4A3F874D29C2851B005BD430 /* QuizStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuizStoryboard.storyboard; sourceTree = "<group>"; };
+		4A3F875129C2857E005BD430 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		4A3F875429C29089005BD430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A3F875729C29110005BD430 /* MissStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MissStoryboard.storyboard; sourceTree = "<group>"; };
 		4AC2D06629B7B2F500E6DD35 /* how-much-did-u-miss-me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "how-much-did-u-miss-me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC2D06929B7B2F500E6DD35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AC2D06B29B7B2F500E6DD35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4AC2D06D29B7B2F500E6DD35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4AC2D07029B7B2F500E6DD35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4AC2D06D29B7B2F500E6DD35 /* MissViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissViewController.swift; sourceTree = "<group>"; };
 		4AC2D07229B7B2F500E6DD35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AC2D07729B7B2F500E6DD35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,6 +51,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A3F874029C26788005BD430 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A3F874B29C281B5005BD430 /* Quiz */,
+				4A3F874C29C281EF005BD430 /* Miss */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A3F874129C2679E005BD430 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A3F875729C29110005BD430 /* MissStoryboard.storyboard */,
+				4A3F874D29C2851B005BD430 /* QuizStoryboard.storyboard */,
+				4A3F875529C29089005BD430 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4A3F874229C267A5005BD430 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A3F874929C280DC005BD430 /* QuizViewController.swift */,
+				4AC2D06D29B7B2F500E6DD35 /* MissViewController.swift */,
+				4A3F875129C2857E005BD430 /* MenuTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4A3F874B29C281B5005BD430 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				4A3F873E29C26706005BD430 /* Question.swift */,
+				4A3F874329C2681B005BD430 /* QuizHandler.swift */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		4A3F874C29C281EF005BD430 /* Miss */ = {
+			isa = PBXGroup;
+			children = (
+				4A3F874529C268FA005BD430 /* MissEmojiHandler.swift */,
+				4A3F874729C26BB8005BD430 /* MissTime.swift */,
+			);
+			path = Miss;
+			sourceTree = "<group>";
+		};
 		4AC2D05D29B7B2F500E6DD35 = {
 			isa = PBXGroup;
 			children = (
@@ -56,11 +117,11 @@
 		4AC2D06829B7B2F500E6DD35 /* how-much-did-u-miss-me */ = {
 			isa = PBXGroup;
 			children = (
+				4A3F874029C26788005BD430 /* Model */,
+				4A3F874129C2679E005BD430 /* View */,
+				4A3F874229C267A5005BD430 /* Controller */,
 				4AC2D06929B7B2F500E6DD35 /* AppDelegate.swift */,
 				4AC2D06B29B7B2F500E6DD35 /* SceneDelegate.swift */,
-				4AC2D06D29B7B2F500E6DD35 /* ViewController.swift */,
-				4AC2D06F29B7B2F500E6DD35 /* Main.storyboard */,
-				4A3F873C29C1D0B0005BD430 /* Launch Screen.storyboard */,
 				4AC2D07229B7B2F500E6DD35 /* Assets.xcassets */,
 				4AC2D07729B7B2F500E6DD35 /* Info.plist */,
 			);
@@ -126,8 +187,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AC2D07329B7B2F500E6DD35 /* Assets.xcassets in Resources */,
-				4A3F873D29C1D0B0005BD430 /* Launch Screen.storyboard in Resources */,
-				4AC2D07129B7B2F500E6DD35 /* Main.storyboard in Resources */,
+				4A3F875829C29110005BD430 /* MissStoryboard.storyboard in Resources */,
+				4A3F874E29C2851B005BD430 /* QuizStoryboard.storyboard in Resources */,
+				4A3F875329C29089005BD430 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +200,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AC2D06E29B7B2F500E6DD35 /* ViewController.swift in Sources */,
+				4A3F874429C2681B005BD430 /* QuizHandler.swift in Sources */,
+				4AC2D06E29B7B2F500E6DD35 /* MissViewController.swift in Sources */,
+				4A3F874829C26BB8005BD430 /* MissTime.swift in Sources */,
+				4A3F874A29C280DC005BD430 /* QuizViewController.swift in Sources */,
+				4A3F873F29C26706005BD430 /* Question.swift in Sources */,
+				4A3F875229C2857E005BD430 /* MenuTableViewController.swift in Sources */,
+				4A3F874629C268FA005BD430 /* MissEmojiHandler.swift in Sources */,
 				4AC2D06A29B7B2F500E6DD35 /* AppDelegate.swift in Sources */,
 				4AC2D06C29B7B2F500E6DD35 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,10 +215,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4AC2D06F29B7B2F500E6DD35 /* Main.storyboard */ = {
+		4A3F875529C29089005BD430 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4AC2D07029B7B2F500E6DD35 /* Base */,
+				4A3F875429C29089005BD430 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -282,12 +350,12 @@
 				DEVELOPMENT_TEAM = GZS742E348;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "how-much-did-u-miss-me/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "How Much Did Miss Me?";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Lover;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = NO;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -296,9 +364,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.harungokcegoz.how-much-did-u-miss-me";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,12 +383,12 @@
 				DEVELOPMENT_TEAM = GZS742E348;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "how-much-did-u-miss-me/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "How Much Did Miss Me?";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Lover;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = NO;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -326,9 +397,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.harungokcegoz.how-much-did-u-miss-me";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

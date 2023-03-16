@@ -1,0 +1,207 @@
+//
+//  QuizHandler.swift
+//  how-much-did-u-miss-me
+//
+//  Created by Harun Gökçegöz on 15/03/2023.
+//
+
+import Foundation
+
+struct QuizHandler {
+    var quiz = [
+        Question(
+            scenario: "Your partner receives an unexpected invitation to a karaoke night from a close friend who's visiting from out of town. Your partner has been feeling exhausted after a long week at work and had been looking forward to a quiet night at home.",
+            question: "What would your partner most likely do in this situation?",
+            options: ["Accept the invitation and go to karaoke night, despite their exhaustion", "Turn down the invitation, explaining they need a quiet night at home", "Accept the invitation but leave early to get some rest", "Suggest rescheduling the karaoke night to another day"],
+            answer: "B"
+        ),
+        Question(
+            scenario: "A valuable package your partner has been eagerly awaiting is mistakenly delivered to a neighbor's house while your partner is away. The neighbor, unaware of the mistake, opens the package, and realizes it's not theirs.",
+            question: "How would your partner react to the neighbor opening their package?",
+            options: ["Be understanding, as it was an honest mistake", "Feel upset but not confront the neighbor", "Confront the neighbor about the issue, seeking an explanation", "Report the incident to the delivery company"],
+            answer: "A"
+        ),
+        Question(
+            scenario: "Your partner takes you to a highly recommended restaurant for a special date night. Upon arrival, they realize they've accidentally booked a table for the wrong night, and the restaurant is fully booked.",
+            question: "How would your partner handle the situation at the restaurant?",
+            options: ["Apologize and try to find another restaurant nearby", "Insist on getting a table, hoping the restaurant can accommodate", "Attempt to negotiate with the restaurant staff for a table", "Cancel the date night altogether and head back home"],
+            answer: "A"
+        ),
+        Question(
+            scenario: "You and your partner are at the airport, waiting to board your flight for a long-awaited vacation. An announcement is made that your flight has been delayed for several hours due to unforeseen circumstances.",
+            question: "How would your partner react to the flight delay?",
+            options: ["Stay calm and find ways to pass the time at the airport", "Get frustrated and complain to the airline staff", "Feel anxious about the possible impact on your vacation plans", "Look for alternative flights or transportation options"],
+            answer: "A"
+        ),
+        Question(
+            scenario: "As a fun surprise, you've booked a couples' art class for you and your partner. The class turns out to be more advanced than you'd anticipated, and your partner struggles with the techniques being taught.",
+            question: "How would your partner handle the challenging art class?",
+            options: ["Laugh it off and enjoy the experience despite the difficulties", "Feel embarrassed and want to leave the class early", "Become determined to master the techniques, even if it takes time", "Lose interest and focus on helping you with your artwork"],
+            answer: "C"
+        ),
+        Question(
+            scenario: "Your partner accidentally forgets an important date, such as your anniversary, and doesn't realize their mistake until the day has passed.",
+            question: "How would your partner make up for forgetting the important date?",
+            options: ["Plan a surprise celebration to make up for the mistake", "Apologize sincerely and promise to remember in the future", "Buy a thoughtful gift to show their remorse", "Act as if nothing happened and hope you don't bring it up"],
+            answer: "B"
+        ),
+        Question(
+            scenario: "Your partner is about to meet your parents for the first time, and they're feeling a mix of excitement and nervousness. Your parents have specific interests and opinions that your partner is not familiar with.",
+            question: "How would your partner prepare for the meeting with your parents?",
+            options: ["Do extensive research on your parents' interests to impress them", "Ask you for advice on how to approach the meeting", "Rely on their natural charm and hope for the best", "Focus on finding common ground during the conversation"],
+            answer: "B"
+        ),
+        Question(
+            scenario: "You and your partner have a disagreement about a significant aspect of your future together, such as where to live or when to start a family.",
+            question: "How would your partner handle the disagreement on future plans?",
+            options: ["Be open to a compromise that works for both of you", "Insist on their preferred plan without considering alternatives", "Take time to reflect and revisit the discussion later", "Avoid the topic altogether to prevent further conflict"],
+            answer: "A"
+        ),
+        Question(
+            scenario: "Your partner receives an opportunity to pursue a personal or professional goal, but it would require them to be away from you for an extended period.",
+            question: "How would your partner approach the decision to pursue their goal?",
+            options: ["Discuss the opportunity with you and seek your input", "Decide to pursue the goal and hope you'll be supportive", "Decline the opportunity in order to prioritize your relationship", "Accept the opportunity but try to find ways to minimize the impact on your relationship"],
+            answer: "A"
+        ),
+        Question(
+            scenario: "You and your partner are going through a stressful period due to external factors, such as work or family issues, which is affecting your relationship.",
+            question: "How would your partner cope with the stress in the relationship?",
+            options: ["Communicate openly about their feelings and seek solutions together", "Withdraw and try to deal with their stress independently", "Focus on self-care and encourage you to do the same", "Look for distractions, such as new hobbies or social activities"],
+            answer: "A"
+        ),
+        Question(
+            scenario: "You and your partner have finally managed to set aside time for a vacation together. However, you prefer a relaxing beach holiday, while your partner is more interested in an adventurous mountain escape.",
+            question: "How would your partner approach the vacation planning given the differing preferences?",
+            options: ["Insist on their preferred choice and try to convince you", "Compromise and look for a destination that offers both experiences", "Agree to your preference this time and plan their choice for the next vacation", "Suggest taking separate vacations to fulfill individual desires"],
+            answer: "B"
+        ),
+        Question(
+            scenario: "Your partner's close friends from college plan a surprise visit and stay at your home for a weekend. Coincidentally, you've been going through a stressful time at work and were hoping to use the weekend to relax and recharge.",
+            question: "How would your partner handle this situation?",
+            options: ["Welcome their friends and expect you to join in the fun", "Inform their friends about your situation and reschedule the visit", "Suggest their friends stay at a nearby hotel to give you some space", "Try to balance time between you and their friends during the weekend"],
+            answer: "D"
+        ),
+        Question(
+            scenario: "Your partner is offered a fantastic career opportunity that would require moving to a different country for a year. The move would significantly impact both your professional and personal lives.",
+            question: "What would your partner most likely do in this situation?",
+            options: ["Accept the opportunity without discussing it with you", "Turn down the opportunity to avoid disrupting your lives", "Have an open conversation with you about the pros and cons", "Accept the opportunity and try to make long-distance work for a year"],
+            answer: "C"
+        ),
+        Question(
+            scenario: "During the holiday season, both of your families have scheduled gatherings on the same day. Your partner's family lives a few hours away, while your family lives in the same city.",
+            question: "How would your partner handle the conflicting family gatherings?",
+            options: ["Prioritize their own family's gathering and ask you to join them", "Split the day between both gatherings, even if it means extra travel", "Attend their family's gathering and encourage you to attend yours", "Suggest alternating family gatherings each year to be fair"],
+            answer: "D"
+        ),
+        Question(
+            scenario: "You and your partner are considering buying a new car. Your partner has their heart set on a specific make and model, but you believe it's too expensive and impractical for your needs.",
+            question: "How would your partner handle this disagreement on the major purchase?",
+            options: ["Insist on buying the car they want, regardless of your concerns", "Try to find a more affordable alternative that still meets their preferences", "Compromise on a car that suits both of your needs and budgets", "Postpone the purchase and revisit the discussion later"],
+            answer: "C"
+        ),
+        Question(
+        scenario: "Your partner's company is organizing a charity event that involves a day of volunteering. Your partner is given the option to participate or not.",
+        question: "What would your partner choose to do in this situation?",
+        options: ["Eagerly sign up to volunteer at the charity event", "Politely decline participation due to personal reasons", "Agree to participate only if their close colleagues are also joining", "Choose to make a financial donation instead of volunteering their time"],
+        answer: "A"
+        ),
+        Question(
+        scenario: "Your partner and their friends are planning a movie night, and there's a debate on which genre to watch. Your partner has a favorite genre, but it's not popular among the group.",
+        question: "How would your partner handle this movie genre debate?",
+        options: ["Insist on watching their favorite genre", "Compromise and suggest watching two movies, including their favorite", "Give in to the group's preference without arguing", "Suggest watching a movie that combines multiple genres"],
+        answer: "B"
+        ),
+        Question(
+        scenario: "Your partner is considering adopting a pet and has a preference for a specific breed or species. However, they learn that there's a high-maintenance pet in need of a home.",
+        question: "What would your partner do in this situation?",
+        options: ["Adopt their preferred breed or species without considering the needy pet", "Adopt the high-maintenance pet, despite it not being their first choice", "Research more about the high-maintenance pet before making a decision", "Decide against adopting any pet due to the complications"],
+        answer: "C"
+        ),
+        Question(
+        scenario: "Your partner is tasked with planning a surprise party for a mutual friend. They have some ideas, but they're not sure if the friend would enjoy them.",
+        question: "How would your partner approach the surprise party planning?",
+        options: ["Stick to their ideas, believing the friend will enjoy them", "Seek your input and advice on the party plans", "Ask the friend's other close friends for suggestions", "Opt for a low-key gathering to avoid potential disappointment"],
+        answer: "B"
+        ),
+        Question(
+        scenario: "Your partner has some free time and wants to explore a new hobby. They have several interests but can only choose one to start with.",
+        question: "Which hobby would your partner most likely choose?",
+        options: ["A creative hobby, such as painting or photography", "A physical hobby, like hiking or dancing", "A social hobby, such as joining a club or taking a group class", "A solitary hobby, like reading or gardening"],
+        answer: "C"
+        ),
+        Question(
+        scenario: "Your partner has a co-worker who is challenging to work with due to their attitude and work habits.",
+        question: "How would your partner handle the difficult co-worker?",
+        options: ["Confront the co-worker directly and discuss the issues", "Complain to their manager or HR about the co-worker", "Try to work around the co-worker and avoid confrontation", "Offer assistance and support in hopes of improving the relationship"],
+        answer: "D"
+        ),
+        Question(
+        scenario: "Your partner is planning a vacation and wants to choose a destination that offers a mix of relaxation and adventure.",
+        question: "What type of destination would your partner most likely select?",
+        options: ["A tropical beach with opportunities for water sports", "A bustling city with a mix of cultural and outdoor activities", "A mountain retreat with opportunities for hiking and spa treatments", "A countryside location with quaint villages and scenic trails"],
+        answer: "B"
+        ),
+        Question(
+        scenario: "Your partner has been having a disagreement with a neighbor over a tree that is growing across the property line. The neighbor wants the tree removed, while your partner prefers to keep it. The situation has started to become tense between the two parties.",
+        question: "How would your partner handle this neighborhood dispute?",
+        options: ["Continue to argue for keeping the tree, regardless of the neighbor's feelings", "Seek a compromise, such as trimming the tree or sharing the cost of maintenance", "Give in to the neighbor's request and remove the tree to keep the peace", "Involve a mediator or legal professional to resolve the issue fairly"],
+        answer: "B"
+        ),
+        Question(
+        scenario: "Your partner has spent weeks planning a surprise birthday party for you, inviting friends and family from out of town. However, just before the party, there's a major storm that causes travel disruptions and makes it impossible for guests to attend.",
+        question: "How would your partner react to this last-minute party cancellation?",
+        options: ["Insist on proceeding with the party despite the challenges", "Cancel the party and plan a smaller, more intimate celebration", "Postpone the party until a later date when guests can attend", "Quickly adapt and organize a virtual party for everyone to join remotely"],
+        answer: "C"
+        ),
+        Question(
+        scenario: "Your partner is offered a promotion at work that comes with increased responsibilities and a higher salary. However, it also requires longer hours and more frequent travel, which could impact your relationship and home life.",
+        question: "What would your partner do in this situation?",
+        options: ["Accept the promotion without discussing the potential impact on your relationship", "Decline the promotion to preserve the balance in your current lifestyle", "Discuss the promotion with you and weigh the pros and cons together", "Accept the promotion and work on finding ways to balance their new role and personal life"],
+        answer: "C"
+        ),
+        Question(
+        scenario: "While on vacation with you, your partner suddenly falls ill and requires medical attention. The illness isn't life-threatening, but it will force your partner to stay in bed and rest for several days, affecting your vacation plans.",
+        question: "How would your partner handle this sudden illness during the vacation?",
+        options: ["Insist on continuing with the planned activities, despite their health", "Encourage you to go on planned excursions without them while they rest", "Focus on their recovery and suggest rescheduling the trip for a later date", "Re-evaluate the vacation plans and come up with alternative, low-key activities"],
+        answer: "D"
+        ),
+        Question(
+        scenario: "Your partner has been volunteering at a local organization for years, but recently, they've been feeling overwhelmed by their commitments. They're now faced with the decision of whether to continue volunteering or take a step back.",
+        question: "How would your partner handle this volunteering dilemma?",
+        options: ["Maintain their current level of involvement, despite feeling overwhelmed", "Resign from the organization entirely to focus on other priorities", "Reduce their volunteering hours and discuss the situation with the organization", "Seek a temporary leave of absence to reevaluate their commitment and priorities"],
+        answer: "C"
+        )
+    ]
+    
+    var currentQuestionIndex = 0
+    var score = 0
+    var quizQuestions: Array<Question>
+
+    func displayQuestion(question: Question) {
+        // Update the UI elements with the scenario, question, and options
+    }
+
+    mutating func getQuiz() -> Array<Question> {
+        quiz.shuffle()
+        quizQuestions = Array(quiz.prefix(5))
+        return quizQuestions
+    }
+    
+    mutating func selectAnswer(selectedOption: String){
+        let currentQuestion = quizQuestions[currentQuestionIndex]
+        if selectedOption == currentQuestion.answer {
+            score += 20
+        }
+        currentQuestionIndex += 1
+        if currentQuestionIndex < quizQuestions.count{
+            displayQuestion(question: quizQuestions[currentQuestionIndex])
+        } else {
+            showFinalScore()
+        }
+    }
+    
+    func showFinalScore() {
+        // Update the UI elements to display the final score out of 100
+    }
+
+}

@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="03Z-mx-cK8">
             <objects>
-                <viewController id="msh-cm-RTU" customClass="ViewController" customModule="how_much_did_u_miss_me" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MissStoryboard" modalPresentationStyle="fullScreen" id="msh-cm-RTU" customClass="ViewController" customModule="how_much_did_u_miss_me" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cuv-NU-ZJW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,9 +72,16 @@
                                         <rect key="frame" x="0.0" y="509.33333333333343" width="393" height="249.66666666666669"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvN-sS-tdp">
-                                                <rect key="frame" x="157.66666666666666" y="107.66666666666663" width="78" height="34.333333333333343"/>
+                                                <rect key="frame" x="136.66666666666666" y="100" width="119.99999999999997" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="639-gl-Xqo"/>
+                                                    <constraint firstAttribute="height" constant="50" id="xzc-SJ-q1N"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.49019607840000001" green="0.72549019609999998" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Submit">
+                                                    <color key="baseBackgroundColor" red="0.91372549020000005" green="0.3921568627" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="submitButtonTapped:" destination="msh-cm-RTU" eventType="touchUpInside" id="R8g-Jf-Edy"/>
                                                 </connections>
@@ -101,6 +108,7 @@
                             <constraint firstAttribute="bottom" secondItem="Qbi-qO-iVu" secondAttribute="bottom" id="yCW-JE-tDX"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="0pV-Cr-IUQ"/>
                     <connections>
                         <outlet property="dateTextField" destination="b55-2P-7tg" id="IIZ-9g-6mg"/>
                         <outlet property="imageView" destination="7in-VQ-sTT" id="f2a-Fe-0vI"/>
@@ -109,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NtW-Pk-3RZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="200.76335877862596" y="-209.1549295774648"/>
+            <point key="canvasLocation" x="1127.4809160305342" y="-209.1549295774648"/>
         </scene>
     </scenes>
     <resources>
