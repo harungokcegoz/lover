@@ -2,7 +2,7 @@
 
 Lover is an iOS application developed using Swift and UIKit to facilitate the organization of daily tasks and activities for couples. The primary objective of this project is to enhance my understanding of Swift programming and its associated concepts.
 
-# Features:
+# Features
 
 ➙ Grocery List: A straightforward interface for creating and managing grocery lists to streamline shopping experiences.
 
@@ -13,6 +13,8 @@ Lover is an iOS application developed using Swift and UIKit to facilitate the or
 ➙ Sketches: A feature to create and share sketches, with the added functionality of displaying them as widgets.
 
 ➙ Romantic Quizzes: A collection of quizzes designed for couples to engage with and learn more about each other.
+
+This project is still in progress. Forgive me for missing parts.
 
 Throughout the development process, I aim to enhance my skills in Swift patterns/designs, data structures, optionals, structs, classes, networking, and Firebase integration. This project serves as a foundation for building proficiency in Swift and UIKit, preparing me for more complex projects in the future.
 
