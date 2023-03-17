@@ -24,46 +24,65 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yb9-bS-idF">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1b-Il-9iu">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cny-iL-Bza" userLabel="QuestionArea">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="377"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="wTI-yp-iDJ">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scenario" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x58-22-slM">
+                                                <rect key="frame" x="163.33333333333334" y="0.0" width="66.666666666666657" height="168"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.96078431369999995" green="0.91372549020000005" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1b-Il-9iu">
+                                                <rect key="frame" x="162.33333333333334" y="173" width="68.666666666666657" height="204"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.96078431369999995" green="0.91372549020000005" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wTI-yp-iDJ" userLabel="Answers">
                                         <rect key="frame" x="0.0" y="382" width="393" height="377"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isw-nJ-a0H">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="68"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isw-nJ-a0H" userLabel="A">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="90.666666666666671"/>
                                                 <color key="tintColor" red="0.91372549020000005" green="0.3921568627" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gUQ-f0-ZTs"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVj-4k-WLB">
-                                                <rect key="frame" x="0.0" y="103" width="393" height="68"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVj-4k-WLB" userLabel="B">
+                                                <rect key="frame" x="0.0" y="95.666666666666629" width="393" height="90.333333333333314"/>
                                                 <color key="tintColor" red="0.91372549020000005" green="0.3921568627" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="phe-bX-peI"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oS4-uD-N61">
-                                                <rect key="frame" x="0.0" y="206" width="393" height="68"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oS4-uD-N61" userLabel="C">
+                                                <rect key="frame" x="0.0" y="191" width="393" height="90.666666666666686"/>
                                                 <color key="tintColor" red="0.91372549020000005" green="0.3921568627" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="npT-yx-yib"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFs-OC-UR0">
-                                                <rect key="frame" x="0.0" y="309" width="393" height="68"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFs-OC-UR0" userLabel="D">
+                                                <rect key="frame" x="0.0" y="286.66666666666663" width="393" height="90.333333333333314"/>
                                                 <color key="tintColor" red="0.91372549020000005" green="0.3921568627" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="44h-Ci-CV2"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="I1b-Il-9iu" firstAttribute="centerY" secondItem="yb9-bS-idF" secondAttribute="centerY" id="0mi-BZ-cgX"/>
-                                    <constraint firstItem="I1b-Il-9iu" firstAttribute="centerX" secondItem="yb9-bS-idF" secondAttribute="centerX" id="cr8-oc-kBU"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -86,7 +105,9 @@
                         <outlet property="answerB" destination="dVj-4k-WLB" id="n8U-tL-pgg"/>
                         <outlet property="answerC" destination="oS4-uD-N61" id="xoy-hu-h8G"/>
                         <outlet property="answerD" destination="wFs-OC-UR0" id="qk2-GM-TiD"/>
+                        <outlet property="myStackView" destination="yb9-bS-idF" id="MYd-nP-HTv"/>
                         <outlet property="questionArea" destination="I1b-Il-9iu" id="sD5-de-Ttv"/>
+                        <outlet property="scenario" destination="x58-22-slM" id="ln5-dw-yoC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
