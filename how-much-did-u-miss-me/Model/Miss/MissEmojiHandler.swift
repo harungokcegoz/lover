@@ -19,11 +19,9 @@ class EmojiHandler: UIImageView {
         randomNumber = Int.random(in: 0...9)
         return randomNumber
     }
-
-    func updateImage(with index: Int) {
-        if index >= 0 && index < emojiImages.count {
-            self.image = UIImage(named: emojiImages[index])
-        }
+    
+    func getRandomEmoji() -> String {
+        return emojiImages[getRandomNumber()]
     }
     
 

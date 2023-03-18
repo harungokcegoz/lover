@@ -27,7 +27,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let hours = missedTime.hoursElapsed()
         
         progressLabel.text = "I miss you this big: \(Int(hours))%"
-        emoji.updateImage(with: emoji.getRandomNumber())
+        imageView.image = UIImage(named: emoji.getRandomEmoji())
         
     }
 
@@ -50,6 +50,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         present(alert, animated: true)
     }
     
+
 
 
 }

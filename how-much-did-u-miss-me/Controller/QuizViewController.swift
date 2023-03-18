@@ -28,18 +28,16 @@ class QuizViewController: UIViewController {
     }
     
     func setupLabels() {
-        // Set the number of lines to 0 to allow the label to use as many lines as needed
         scenario.numberOfLines = 0
         questionArea.numberOfLines = 0
         
-        // Adjust the font size to fit the available width
+      
         scenario.adjustsFontSizeToFitWidth = true
-        scenario.minimumScaleFactor = 0.5 // minimum font size (as a ratio of the original font size)
-        scenario.lineBreakMode = .byWordWrapping // Break the text by words
-        
+        scenario.minimumScaleFactor = 2
+        scenario.lineBreakMode = .byWordWrapping
         questionArea.adjustsFontSizeToFitWidth = true
-        questionArea.minimumScaleFactor = 0.5 // minimum font size (as a ratio of the original font size)
-        questionArea.lineBreakMode = .byWordWrapping // Break the text by words
+        questionArea.minimumScaleFactor = 2
+        questionArea.lineBreakMode = .byWordWrapping
     }
     
     
