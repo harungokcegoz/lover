@@ -7,9 +7,11 @@ As my first iOS app, it is simple and was created as a personal exercise.
 
 # Features
 
-- How Much Did You Miss Me: Enter the date you last saw your partner and see the percentage of how much they missed you. While it may seem nonsensical, it was a local joke between my girlfriend and me, and I wanted to make her happy while learning.
+## How Much Did You Miss Me:
 
-## Screenshots
+Enter the date you last saw your partner and see the percentage of how much they missed you. While it may seem nonsensical, it was a local joke between my girlfriend and me, and I wanted to make her happy while learning.
+
+### Screenshots
 
 ![Simulator Screen Shot - iPhone 14 Pro - 2023-03-28 at 16 29 20](https://user-images.githubusercontent.com/94520965/228272147-1ca0a7c4-5ed2-4763-aaa6-398f377baeee.png)
 
@@ -17,10 +19,10 @@ As my first iOS app, it is simple and was created as a personal exercise.
 
 ![Simulator Screen Shot - iPhone 14 Pro - 2023-03-28 at 16 29 52](https://user-images.githubusercontent.com/94520965/228272197-8d06d479-078f-46e6-8a10-ea2cae29c2ab.png)
 
+## Romantic Quizzes:
+Each launch of the app features 10 different questions from a prepared question pool. After completing the quiz, an alert displays with an unmerciful message based on the score.
 
-- Romantic Quizzes: Each launch of the app features 10 different questions from a prepared question pool. After completing the quiz, an alert displays with an unmerciful message based on the score.
-
-## Screenshots
+### Screenshots
 
 ![Simulator Screen Shot - iPhone 14 Pro - 2023-03-28 at 16 30 11](https://user-images.githubusercontent.com/94520965/228272762-6df5e645-27a7-4565-b657-edbf1185b9ce.png)
 
