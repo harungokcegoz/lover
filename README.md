@@ -2,19 +2,14 @@
 
 Lover is an iOS application developed using Swift and UIKit to facilitate the organization of daily tasks and activities for couples. The primary objective of this project is to enhance my understanding of Swift programming and its associated concepts.
 
+This one was my first iOS app. It was an exercise that I managed myself. So, it is very simple.
+
 # Features
 
-➙ Grocery List: A straightforward interface for creating and managing grocery lists to streamline shopping experiences.
-
-➙ To-Do-List: A comprehensive to-do list feature that allows couples to plan and track their daily tasks and responsibilities together.
-
-➙ Notes: A platform for leaving essential notes and reminders, promoting efficient communication between partners.
-
-➙ Sketches: A feature to create and share sketches, with the added functionality of displaying them as widgets.
+- How Much Did You Miss Me: It shows the percentage of how much your partner missed you if you enter the date that you saw each other last time.
 
 ➙ Romantic Quizzes: A collection of quizzes designed for couples to engage with and learn more about each other.
 
-This project is still in progress. Forgive me for missing parts.
 
 Throughout the development process, I aim to enhance my skills in Swift patterns/designs, data structures, optionals, structs, classes, networking, and Firebase integration. This project serves as a foundation for building proficiency in Swift and UIKit, preparing me for more complex projects in the future.
 
