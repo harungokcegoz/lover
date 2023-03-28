@@ -4,6 +4,10 @@ Lover is an iOS application developed using Swift and UIKit that helps couples o
 
 As my first iOS app, it is simple and was created as a personal exercise.
 
+# What I Worked On:
+Throughout the development process, I aim to enhance my skills in Swift patterns/designs, data structures, optionals, structs, classes, networking, and Firebase integration. This project serves as a foundation for building proficiency in Swift and UIKit, preparing me for more complex projects in the future.
+
+Lover is not only a practical application for couples but also a valuable learning experience for me as I continue to grow and develop as a Swift programmer.
 
 # Features
 
@@ -30,7 +34,4 @@ Each launch of the app features 10 different questions from a prepared question 
 
 ![Simulator Screen Shot - iPhone 14 Pro - 2023-03-28 at 16 30 24](https://user-images.githubusercontent.com/94520965/228272806-6b2d94ce-6f22-41f6-84b4-343a37a4822a.png)
 
-#Conclusion
-Throughout the development process, I aim to enhance my skills in Swift patterns/designs, data structures, optionals, structs, classes, networking, and Firebase integration. This project serves as a foundation for building proficiency in Swift and UIKit, preparing me for more complex projects in the future.
 
-Lover is not only a practical application for couples but also a valuable learning experience for me as I continue to grow and develop as a Swift programmer.
