@@ -1,5 +1,9 @@
 # General Info
 
+It originated from a local joke between me and my girlfriend. I decided to develop such an app because I wanted to both make her happy and practice in Swift.
+
+WIN-WIN :)
+
 Lover is an iOS application developed using Swift and UIKit that helps couples organize their daily tasks and activities. The primary objective of this project is to enhance my understanding of Swift programming and associated concepts.
 
 As my first iOS app, it is simple and was created as a personal exercise.
